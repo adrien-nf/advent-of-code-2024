@@ -1,5 +1,4 @@
 import fs from "fs";
-import { parse } from "path";
 
 const input = fs.readFileSync("./01/input.txt").toString();
 
