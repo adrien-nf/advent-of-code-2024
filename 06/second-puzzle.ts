@@ -230,7 +230,7 @@ const map = new Map(lines);
 const answer = map
   .getVisitedCells()
   .slice(1)
-  .reduce((acc, curr, index) => {
+  .reduce((acc, curr) => {
     const loopFinder = new LoopFinder([...lines]);
     loopFinder.setCell(curr, Cell.Wall);
     return acc + (loopFinder.hasLoop() ? 1 : 0);
